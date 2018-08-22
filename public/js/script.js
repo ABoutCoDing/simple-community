@@ -8,13 +8,12 @@ var routes = [
 
 var router = new VueRouter({
   mode: 'history',
+  linkActiveClass: 'active',
   routes: routes,
 });
 
 new Vue({
   el: '#app',
   router: router,
-  template: /*html*/`
-  <router-view></router-view>
-`,
+  template: '<router-view></router-view>',
 });
